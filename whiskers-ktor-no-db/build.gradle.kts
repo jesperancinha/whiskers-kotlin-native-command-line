@@ -29,7 +29,7 @@ kotlin {
             }
         }
     }
-    val ktorVersion="3.0.3"
+    val ktorVersion="3.1.0"
     sourceSets {
         val nativeMain by getting {
             dependencies {
@@ -37,7 +37,7 @@ kotlin {
                 implementation("io.ktor:ktor-server-cio:$ktorVersion")
                 implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
                 implementation("io.ktor:ktor-server-content-negotiation:$ktorVersion")
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0")
             }
         }
         val nativeTest by getting {
